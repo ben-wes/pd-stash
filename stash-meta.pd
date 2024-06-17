@@ -1,0 +1,7 @@
+#N canvas 65 88 415 253 10;
+#X text 12 18 AUTHOR Ben Wesch;
+#X text 12 131 LICENSE Unlicense;
+#X text 12 38 NAME stash;
+#X text 12 58 DESCRIPTION abstraction set for preset management, f 51;
+#X text 12 89 VERSION 0.1;
+#X text 12 109 KEYWORDS preset \, presets \, preset management \, stash, f 61;
