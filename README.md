@@ -1,5 +1,5 @@
 # [stash/hub] + [stash]
-Puredata (Pd) preset management based on central [stash/hub] and small [stash] plugin objects
+Puredata (Pd) abstractions for preset management, based on central [stash/hub] and small [stash] plugin objects
 
 ### Usage (draft)
 * connect [stash] objects to any number of objects to store their values
