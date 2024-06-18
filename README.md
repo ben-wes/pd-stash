@@ -24,6 +24,6 @@ Puredata (Pd) abstractions for preset management, based on central [stash/hub] a
 see help of [stash] object for example application.
 
 ## Mechanism
-* when creating a [stash] object, it will self-assign its id and then check among other [stash] objects in the patch whether the id is unique. it will repeat this process with random ids in a range of `0..10'000'000` until it finds a unique id (which in most cases should be instantly)
+* when creating a [stash] object, it will self-assign its id and then check among other [stash] objects in the patch whether the id is unique. it will repeat this process with random ids in a range of `0..999'999` until it finds a unique id (which in most cases should be instantly)
 * when storing a preset with [stash/hub], all [stash] objects get a `store` message, output a bang on their outlet and send back the numbers they receive from their inlet to [stash/hub] together with their id
 * easing and morphing are handled in the [stash] objects based on the messages they receive

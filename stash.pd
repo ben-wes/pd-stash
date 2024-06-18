@@ -334,7 +334,7 @@
 #X text 270 195 FIXME: connect?;
 #X text 883 729 Ben Wesch \, 2024;
 #X obj 552 346 t b f b;
-#X obj 506 214 random 1e+07;
+#X obj 506 214 random 1e+06;
 #X connect 0 0 44 0;
 #X connect 3 0 57 0;
 #X connect 4 0 5 1;
