@@ -98,9 +98,6 @@
 #X text 257 631 <-- dynamic receiver. delete before resaving this patch (not critical \, but cleaner), f 83;
 #X obj 58 631 cnv 19 19 19 empty empty empty 20 12 0 12 #ff0400 #404040 0;
 #N canvas 80 209 450 300 \$0-receive-preset-insert 0;
-#X obj 100 100 r 1015-preset-insert;
-#X obj 100 140 s \$0-receive-preset-insert;
-#X connect 0 0 1 0;
 #X restore 58 631 pd \$0-receive-preset-insert;
 #X obj 203 241 f;
 #X obj 203 129 route bang, f 5;

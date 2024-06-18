@@ -1,11 +1,10 @@
-#N canvas 323 128 373 273 12;
+#N canvas 323 128 409 273 12;
 #X obj 45 48 inlet;
 #X obj 45 92 route bang;
 #X obj 45 201 outlet;
 #X obj 45 157 array get \$1;
 #X obj 112 116 array set \$1;
-#X text 89 49 helper function for array presets;
-#X text 107 200 FIXME: move to presetter/preset?;
+#X text 89 49 helper function for stashing array values;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 1 4 0;
