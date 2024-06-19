@@ -19,8 +19,12 @@ Puredata (Pd) abstractions for preset management, based on central [stash/hub] a
 * morph between states with float input (0..1 or 1..0 - depending on start value)
 * record and play back value changes
 * additional helper object [stash/arr] facilitates management of array values
-* optional argument to create black or randomly colored plugins (`-black` or `-color` based on id) 
-* manually set id via `-id <number>` argument or simply by adding a float argument
+* optional `-color` flag to set the color:
+  * color will be randomly generated based on the id if no argument is given
+  * `black` will create a black object (this can also be achieved by just setting the `-black` flag)
+  * you can set any hexadecimal value - e.g. `-color #ddff22`
+* manually set id via `-id <number>` flag or simply by adding a float argument
+* avoid easing of values by adding `-noease` flag
 
 see help of [stash] object for example application.
 
