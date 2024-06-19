@@ -47,7 +47,7 @@
 #X obj 701 287 t b f;
 #X text 796 455 receive ping from any object with this id;
 #X text 737 197 use and save received id;
-#N canvas 1135 250 679 612 background 0;
+#N canvas 1135 250 679 593 background 0;
 #X obj 139 527 s \$0-background;
 #X msg 139 208 0 1 2;
 #X obj 139 275 unpack f f f;
@@ -169,7 +169,7 @@
 #X obj 43 45 r \$0-kwarg-color;
 #X obj 43 85 route black bang;
 #X obj 43 65 list trim;
-#X obj 14 136 r \$0-kwarg-black;
+#X obj 34 144 r \$0-kwarg-black;
 #X obj 139 255 x/shuffle;
 #X obj 139 384 x/rgb2hex;
 #X msg 211 377 color #ffffff #ffffff #000000;
@@ -208,7 +208,6 @@
 #X msg 43 430 color \$1 #ffffff #ffffff;
 #X msg 43 166 symbol #000000;
 #X obj 136 105 symbol;
-#X obj 158 65 print color;
 #X connect 1 0 23 0;
 #X connect 2 0 3 0;
 #X connect 2 1 4 0;
@@ -234,7 +233,6 @@
 #X connect 17 0 25 0;
 #X connect 18 0 14 1;
 #X connect 19 0 21 0;
-#X connect 19 0 61 0;
 #X connect 20 0 59 0;
 #X connect 20 1 15 0;
 #X connect 20 2 60 0;
