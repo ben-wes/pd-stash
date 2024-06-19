@@ -20,7 +20,7 @@ Puredata (Pd) abstractions for preset management, based on central [stash/hub] a
 * record and play back value changes
 * additional helper object [stash/arr] facilitates management of array values
 * optional `-color` flag to set the color:
-  * color will be randomly generated based on the id if no argument is given
+  * color will be generated based on the id if no argument is given
   * `black` will create a black object (this can also be achieved by just setting the `-black` flag)
   * you can set any hexadecimal value - e.g. `-color #ddff22`
 * manually set id via `-id <number>` flag or simply by adding a float argument
