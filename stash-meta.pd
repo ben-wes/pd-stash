@@ -3,5 +3,5 @@
 #X text 12 131 LICENSE Unlicense;
 #X text 12 38 NAME stash;
 #X text 12 58 DESCRIPTION abstraction set for preset management, f 51;
-#X text 12 89 VERSION 0.2.2;
+#X text 12 89 VERSION 0.2.3;
 #X text 12 109 KEYWORDS preset \, presets \, preset management \, stash, f 61;
