@@ -23,8 +23,9 @@ Puredata (Pd) abstractions for preset management, based on central [stash/hub] a
   * color will be generated based on the id if no argument is given
   * `-color black` will create a black object (this can also be achieved by just setting the `-black` flag)
   * you can set any hexadecimal value - e.g. `-color #ddff22`
-* manually set id via `-id <number>` flag or simply by adding a float argument
+* manually set id via `-id <id>` flag or simply by adding a float or symbol argument
 * avoid easing of values by adding `-noease` flag
+* output id and visualize by setting `-debug` flag
 
 see help of [stash] object for example application.
 
