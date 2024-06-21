@@ -8,7 +8,7 @@ Puredata (Pd) abstractions for preset management, based on central [stash/hub] a
 
 ## Usage
 * connect [stash] objects to any number of objects to store and restore their values (connections are made via "cross-connecting" - inlet->outlet, outlet->inlet)
-* create a central [stash/hub] to control presets (store, restore, record, stop, save, load, ease, fade, etc.)
+* create a central [stash/hub] to control presets (store, restore, record, stop, save, load, ease, moprh, etc.)
 * an additional [stash/arr <array_name>] object can be used to store and restore array values
 
 ## Features
@@ -17,17 +17,41 @@ Puredata (Pd) abstractions for preset management, based on central [stash/hub] a
 * store (and restore) arbitrary amount of preset states
 * ease states with a variety of ease functions
 * morph between states with float input (0..1 or 1..0 - depending on start value)
-* record and play back value changes
+* record and play back value changes instead of single preset snapshots
 * additional helper object [stash/arr] facilitates management of array values
-* optional `-color` flag to set the color:
-  * color will be generated based on the id if no argument is given
+* custom color and id definitions for [stash] objects
+
+See help of [stash] object for example application.
+
+# Flags and messages
+## [stash]
+### creation arguments
+* `-color (black, #<hexcode>)` to set the color:
+  * color will be generated based on id if no argument is given
   * `-color black` will create a black object (this can also be achieved by just setting the `-black` flag)
   * you can set any hexadecimal value - e.g. `-color #ddff22`
-* manually set id via `-id <id>` flag or simply by adding a float or symbol argument
-* avoid easing of values by adding `-noease` flag
-* output id and visualize by setting `-debug` flag
+* `-id <id>`, `<float>` or `<symbol>` to manually set id via flag or simply by adding a float or symbol argument
+* `-noease` to avoid easing of values (will directly switch to target value)
+* `-debug` to output id on creation
 
-see help of [stash] object for example application.
+## [stash/hub]
+### messages (can also be set as creation arguments)
+* `<float>` to restore preset of given id (snapshot or recording). if no preset is present, the id is selected (to store or record into)
+* `restore <id>` to restore preset of given id
+* `target <id>` to set target id for `morph` interaction
+* `morph <float`> to morph to target state with float input of values `0..1` morph can go in both directions, dependet on whether 0 or 1 is first registered value
+* `store (<id>)` to store values to given id (or to selected id if no argument is given)
+* `load (<filename>)` to load presets from file (or via file selection through openpanel if no argument is given)
+* `save (<filename>)` to save presets to file (or via file selection through savepanel if no argument is given)
+* `delete (<id>)` to delete presets at given id (or selected id if no argument is given)
+* `click` or `edit` to display preset data in [text] dialog (should not be edited there due to Pd bug when displaying and storing data with escaped `\,` and `\;`)
+* `clear` to clear all presets
+* `record (<id>)` to
+* `stop` to stop recording (or playback)
+* `showid (<0/1>)` to display [stash] ids next to objects
+* `grain <float>` to set grain size for easing in ms (default is 20, since this is based on Pd's [line])
+* `easetime <float>` to set ease duration in ms
+* `easemode` to set ease mode ... see `x/ease` object for ease functions 
 
 ## Mechanism
 * when creating a [stash] object, it will self-assign its id and then check among other [stash] objects in the patch whether the id is unique. it will repeat this process with random ids in a range of `0..999'999` until it finds a unique id (which in most cases should be instantly)
