@@ -51,7 +51,11 @@ See help of [stash] object for example application.
 * `showid (<0/1>)` to display [stash] ids next to objects
 * `grain <float>` to set grain size for easing in ms (default is 20, since this is based on Pd's [line])
 * `easetime <float>` to set ease duration in ms
-* `easemode` to set ease mode ... see `x/ease` object for ease functions 
+* `easemode <mode>` to set ease mode (see functions below)
+
+### ease functions
+* see abstraction help patch `x/ease-help.pd`
+![ease-help.pd screenshot](ease-help.pd.png)
 
 ## Mechanism
 * when creating a [stash] object, it will self-assign its id and then check among other [stash] objects in the patch whether the id is unique. it will repeat this process with random ids in a range of `0..999'999` until it finds a unique id (which in most cases should be instantly)
