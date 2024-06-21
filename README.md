@@ -56,7 +56,7 @@ See help of [stash] object for example application.
 ### ease functions
 * see abstraction help patch `x/ease-help.pd`
 
-![ease-help.pd screenshot](ease-help.pd.png)
+![ease-help.pd screenshot](x/ease-help.pd.png)
 
 ## Mechanism
 * when creating a [stash] object, it will self-assign its id and then check among other [stash] objects in the patch whether the id is unique. it will repeat this process with random ids in a range of `0..999'999` until it finds a unique id (which in most cases should be instantly)
