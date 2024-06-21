@@ -55,6 +55,7 @@ See help of [stash] object for example application.
 
 ### ease functions
 * see abstraction help patch `x/ease-help.pd`
+
 ![ease-help.pd screenshot](ease-help.pd.png)
 
 ## Mechanism
