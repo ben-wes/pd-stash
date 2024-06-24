@@ -1,6 +1,4 @@
-#N struct 2055-xbar-template float x float height;
-#N struct 2055-ybar-template float y float width;
-#N canvas 457 160 790 796 10;
+#N canvas 457 160 791 801 10;
 #X obj 333 91 namecanvas \$0-pad;
 #X obj 293 441 route size;
 #X obj 137 462 unpack, f 10;
@@ -47,8 +45,6 @@
 #X obj 389 292 f \$0;
 #X msg 389 311 traverse pd-\$1-display \, bang;
 #N canvas 237 262 450 300 \$0-display 0;
-#X scalar 2055-xbar-template 42.5 128 \;;
-#X scalar 2055-ybar-template 47 128 \;;
 #X coords 0 128 128 0 128 128 1;
 #X restore 600 100 pd \$0-display;
 #N canvas 647 566 505 268 \$0-ybar-template 0;
