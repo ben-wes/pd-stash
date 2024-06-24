@@ -1,14 +1,14 @@
 #N canvas 267 104 530 292 10;
 #X obj 252 139 bng 16 250 50 0 \$0-show-example empty show\ example 20 8 0 10 #fcfcfc #000000 #000000;
-#N canvas 355 89 559 646 reference 0;
+#N canvas 355 89 559 667 reference 0;
 #X obj 4 46 cnv 5 550 5 empty empty INLET: 8 18 0 10 #202020 #000000 0;
-#X obj 4 553 cnv 5 550 5 empty empty ARGUMENTS: 8 18 0 10 #202020 #000000 0;
-#X obj 3 630 cnv 2 550 2 empty empty empty 8 18 0 13 #202020 #000000 0;
+#X obj 4 577 cnv 5 550 5 empty empty ARGUMENTS: 8 18 0 10 #202020 #000000 0;
+#X obj 3 654 cnv 2 550 2 empty empty empty 8 18 0 13 #202020 #000000 0;
 #X obj 4 78 cnv 1 550 1 empty empty 1st: 8 12 0 10 #7c7c7c #000000 0;
-#X obj 4 586 cnv 1 550 1 empty empty flags: 8 12 0 10 #7c7c7c #000000 0;
+#X obj 4 610 cnv 1 550 1 empty empty flags: 8 12 0 10 #7c7c7c #000000 0;
 #X text 40 82 should be connected to outlet of value control objects;
 #X text 90 107 <float> -;
-#X text 98 600 all messages are also available as flags with leading '-';
+#X text 98 624 all messages are also available as flags with leading '-';
 #X text 83 17 - preset plugin object for connections to controllers, f 61;
 #X obj 18 17 stash/hub;
 #A saved;
@@ -43,6 +43,8 @@
 #X text 30 277 save (<filename>) -;
 #X text 35 497 easetime <float> -;
 #X text 48 447 showid (<0/1>) -;
+#X text 101 537 -p \$0 -;
+#X text 151 537 manually set parent's \$0 to avoid 'iemguts' dependency (will still show errors in console \, but work anyway), f 54;
 #X restore 427 16 pd reference;
 #X obj 5 45 cnv 1 520 1 empty empty empty 8 12 0 13 #000000 #000000 0;
 #X obj 6 242 cnv 1 520 1 empty empty empty 8 12 0 13 #000000 #000000 0;
@@ -96,7 +98,7 @@
 #X text 93 16 - preset management object;
 #X text 27 64 [stash/hub] is designed for use in combination with one or multiple [stash] objects to facilitate preset management through snapshots and recordings., f 78;
 #X obj 96 259 stash;
-#A saved 434249;
+#A saved 311908;
 #X obj 28 16 stash/hub;
 #A saved;
 #X text 24 259 see also:;
