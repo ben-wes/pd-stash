@@ -33,6 +33,7 @@ See help of [stash] object for example application.
 * `-id <id>`, `<float>` or `<symbol>` to manually set id via flag or simply by adding a float or symbol argument
 * `-noease` to avoid easing of values (will directly switch to target value)
 * `-debug` to output id on creation
+* `-p $0` to manually set parent's $0 (and avoid `iemguts` dependency) 
 
 ## [stash/hub]
 ### messages (can also be set as creation arguments)
@@ -52,6 +53,9 @@ See help of [stash] object for example application.
 * `grain <float>` to set grain size for easing in ms (default is 20, since this is based on Pd's [line])
 * `easetime <float>` to set ease duration in ms
 * `easemode <mode>` to set ease mode (see functions below)
+
+### flag
+* `-p $0` to manually set parent's $0 (and avoid `iemguts` dependency) 
 
 ### ease functions
 * see abstraction help patch `x/ease-help.pd`
