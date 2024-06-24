@@ -1,7 +1,7 @@
 # [stash/hub] + [stash]
 Puredata (Pd) abstractions for preset management, based on central [stash/hub] and small [stash] plugin objects
 
-![stash-help.pd screenshot](stash-help.pd.png)
+![stash-example.pd screenshot](stash-example.pd.png)
 
 ## Requirements
 * requires `iemguts` library (available via `Deken`)
