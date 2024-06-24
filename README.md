@@ -46,7 +46,7 @@ See help of [stash] object for example application.
 * `delete (<id>)` to delete presets at given id (or selected id if no argument is given)
 * `click` or `edit` to display preset data in [text] dialog (should not be edited there due to Pd bug when displaying and storing data with escaped `\,` and `\;`)
 * `clear` to clear all presets
-* `record (<id>)` to
+* `record (<id>)` to start recording to given id (or to selected id if no argument is given)
 * `stop` to stop recording (or playback)
 * `showid (<0/1>)` to display [stash] ids next to objects
 * `grain <float>` to set grain size for easing in ms (default is 20, since this is based on Pd's [line])
