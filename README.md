@@ -34,6 +34,7 @@ See help of [stash] object for example application.
 * `-noease` to avoid easing of values (will directly switch to target value)
 * `-debug` to output id on creation
 * `-p $0` to manually set parent's $0 (and avoid `iemguts` dependency) 
+* `-nogop` to display as regular object without graph-on-parent
 
 ## [stash/hub]
 ### messages (can also be set as creation arguments)
