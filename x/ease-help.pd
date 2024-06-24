@@ -1,5 +1,5 @@
-#N struct 1968-value float width float y symbol text float visible float border float background;
-#N canvas 310 101 1200 743 12;
+#N struct 18824-value float width float y symbol text float visible float border float background;
+#N canvas 119 60 1200 743 12;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array smoothstep 100 float 0;
 #X coords 0 1 99 0 100 100 1 0 0;
