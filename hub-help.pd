@@ -97,12 +97,12 @@
 #X restore 457 258 pd META;
 #X text 93 16 - preset management object;
 #X text 27 64 [stash/hub] is designed for use in combination with one or multiple [stash] objects to facilitate preset management through snapshots and recordings., f 78;
-#X obj 96 259 stash;
+#X obj 88 259 stash;
 #A saved 311908;
 #X obj 28 16 stash/hub;
 #A saved;
 #X text 24 259 see also:;
-#X text 105 259 [stash] [stash/arr];
 #X obj 252 201 bng 16 250 50 0 \$0-stash-help empty show\ [stash]\ help 20 8 0 10 #fcfcfc #000000 #000000;
 #X obj 252 170 bng 16 250 50 0 \$0-show-easemodes empty show\ ease\ modes 20 8 0 10 #fcfcfc #000000 #000000;
 #X text 27 103 see reference subpatch above for all messages and the links below for further relevant information:, f 65;
+#X text 97 259 [stash];
