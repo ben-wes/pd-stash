@@ -59,7 +59,7 @@ See help of [stash] object for example application.
 * `-p $0` to manually set parent's $0 (and avoid `iemguts` dependency) 
 
 ### ease functions
-* see abstraction help patch `x/ease-help.pd`
+see [ease] abstraction help patch `x/ease-help.pd`
 
 ![ease-help.pd screenshot](x/ease-help.pd.png)
 
