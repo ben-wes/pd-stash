@@ -4,4 +4,4 @@
 #X text 12 38 NAME stash;
 #X text 12 58 DESCRIPTION abstraction set for preset management;
 #X text 12 109 KEYWORDS preset \, presets \, preset management \, stash;
-#X text 12 89 VERSION 0.3.3;
+#X text 12 89 VERSION 0.4.0;
