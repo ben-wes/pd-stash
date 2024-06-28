@@ -26,12 +26,12 @@ See help of [stash] object for example application.
 # Flags and messages
 ## [stash]
 ### creation arguments
-* `-color (black, #<hexcode>)` to set the color:
+* `-color (black / <hex color>)` to set the color:
   * color will be generated based on id if no argument is given
   * `-color black` will create a black object (this can also be achieved by just setting the `-black` flag)
   * you can set any hexadecimal value - e.g. `-color #ddff22`
 * `-id <id>`, `<float>` or `<symbol>` to manually set id via flag or simply by adding a float or symbol argument
-* `-noease` to avoid easing of values (will directly switch to target value)
+* `-noease` to avoid easing of values (and always directly jump to target value)
 * `-debug` to output id on creation
 * `-p $0` to manually set parent's $0 (and avoid `iemguts` dependency) 
 * `-nogop` to display as regular object without graph-on-parent
