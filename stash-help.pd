@@ -1,9 +1,9 @@
-#N struct 1439-value float width float y symbol text float visible float border float background;
-#N struct 1474-xbar-template float x float height;
-#N struct 1474-ybar-template float y float width;
+#N struct 1462-value float width float y symbol text float visible float border float background;
+#N struct 1497-xbar-template float x float height;
+#N struct 1497-ybar-template float y float width;
 #N canvas 203 57 871 632 10;
 #X obj 456 452 bng 16 250 50 0 \$0-show-example empty show\ example 20 8 0 10 #fcfcfc #000000 #000000;
-#N canvas 378 101 557 633 reference 0;
+#N canvas 378 101 557 623 reference 0;
 #X obj 4 46 cnv 5 550 5 empty empty INLETS: 8 18 0 10 #202020 #000000 0;
 #X obj 4 287 cnv 5 550 5 empty empty ARGUMENTS: 8 18 0 10 #202020 #000000 0;
 #X obj 3 610 cnv 2 550 2 empty empty empty 8 18 0 13 #202020 #000000 0;
