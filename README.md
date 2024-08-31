@@ -8,7 +8,7 @@ Puredata (Pd) abstractions for preset management, based on central [stash/hub] a
 
 ## Usage
 * connect [stash] objects to any number of objects to store and restore their values (connections are made via "cross-connecting" - inlet->outlet, outlet->inlet)
-* create a central [stash/hub] to control presets (store, restore, record, stop, save, load, ease, moprh, etc.)
+* create a central [stash/hub] to control presets (store, restore, record, stop, save, load, ease, morph, etc.)
 * an additional [stash/arr <array_name>] object can be used to store and restore array values
 
 ## Features
